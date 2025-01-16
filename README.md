@@ -104,6 +104,7 @@ Les bonnes pratiques pour les clés Redis incluent :
 - Inclure la version des données dans la clé si nécessaire.  
 - Documenter la structure des clés utilisées.  
 
+---
 
 ### 12. Comment organiser le point d'entrée de l'application ?
 Le point d'entrée doit :  
@@ -113,10 +114,14 @@ Le point d'entrée doit :
 - Configurer les middlewares essentiels.  
 - Établir les connexions aux bases de données.  
 
-### 13. Quelle est la meilleure façon de gérer le démarrage de l'application ?
+### **13. Quelle est la meilleure façon de gérer le démarrage de l'application ?**
 Une bonne gestion du démarrage implique :  
 - Une séquence claire d'initialisation des composants.  
 - Une gestion robuste des erreurs de démarrage.  
 - Des logs détaillés pour suivre le processus.  
 - Une vérification de l'état de santé des dépendances.  
 - Un mécanisme de retry pour les connexions importantes.  
+
+---
+
+Ce document offre une vue d’ensemble structurée des bonnes pratiques et concepts liés au développement d’une application NoSQL, avec un accent particulier sur la maintenabilité, la robustesse et l’efficacité.
