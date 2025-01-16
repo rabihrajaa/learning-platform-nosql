@@ -12,16 +12,7 @@ async function cacheData(key, data, ttl = 3600) {
   }
 }
 
-async function getCachedData(key) {
-  try {
-    const redisClient = require('../config/db').getRedis();
-    const data = await redisClient.get(`app:${key}`);
-    return data ? JSON.parse(data) : null;
-  } catch (error) {
-    console.error('Error getting cached data:', error);
-    throw error;
-  }
-}
+
 
 async function invalidateCache(key) {
   try {
@@ -29,6 +20,17 @@ async function invalidateCache(key) {
     await redisClient.del(`app:${key}`);
   } catch (error) {
     console.error('Error invalidating cache:', error);
+    throw error;
+  }
+}
+
+async function getCachedData(key) {
+  try {
+    const redisClient = require('../config/db').getRedis();
+    const data = await redisClient.get(`app:${key}`);
+    return data ? JSON.parse(data) : null;
+  } catch (error) {
+    console.error('Error getting cached data:', error);
     throw error;
   }
 }
