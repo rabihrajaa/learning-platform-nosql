@@ -121,7 +121,3 @@ Une bonne gestion du démarrage implique :
 - Des logs détaillés pour suivre le processus.  
 - Une vérification de l'état de santé des dépendances.  
 - Un mécanisme de retry pour les connexions importantes.  
-
----
-
-Ce document offre une vue d’ensemble structurée des bonnes pratiques et concepts liés au développement d’une application NoSQL, avec un accent particulier sur la maintenabilité, la robustesse et l’efficacité.
