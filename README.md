@@ -1,8 +1,7 @@
-Voici une version reformulée et réorganisée du projet :
 
 ---
 
-## Projet de fin de module
+## **Projet de fin de module**
 
 ---
 
